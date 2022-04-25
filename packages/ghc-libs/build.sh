@@ -90,6 +90,7 @@ termux_step_pre_configure() {
 		DYNAMIC_GHC_PROGRAMS = YES
 		SplitSections      = YES
 		StripLibraries     = YES
+		libraries/libiserv_dist-install_HC_OPTS = -fnetwork
 	EOF
 
 	patch -p1 <<-EOF
